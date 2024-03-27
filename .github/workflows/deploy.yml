@@ -9,8 +9,8 @@ env:
 jobs:
   test:
     env:
-      MONGODB_USERNAME: postgres
-      MONGODB_PASSWORD: 123456aa
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_CLUSTER_ADDRESS: cluster0.woam8dg.mongodb.net
       PORT: 8080
     environment: testing
