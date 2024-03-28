@@ -1,9 +1,6 @@
 name: Deployment
 on:
-  push:
-    branches:
-      - master
-      - dev
+  workflow_dispatch:
 env:
   MONGODB_DB_NAME: gha-demo
 jobs:
